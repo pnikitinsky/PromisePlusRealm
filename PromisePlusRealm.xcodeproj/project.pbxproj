@@ -9,21 +9,36 @@
 /* Begin PBXBuildFile section */
 		E9A909E11F38A4C700571267 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A909E01F38A4C700571267 /* AppDelegate.swift */; };
 		E9A909E31F38A4C700571267 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A909E21F38A4C700571267 /* ViewController.swift */; };
-		E9A909E61F38A4C700571267 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9A909E41F38A4C700571267 /* Main.storyboard */; };
 		E9A909E91F38A4C700571267 /* PromisePlusRealm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E9A909E71F38A4C700571267 /* PromisePlusRealm.xcdatamodeld */; };
 		E9A909EB1F38A4C700571267 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9A909EA1F38A4C700571267 /* Assets.xcassets */; };
 		E9A909EE1F38A4C700571267 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9A909EC1F38A4C700571267 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E9C3420F1F3A48BF009C59D8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		05303AFC00BD489288680CC1 /* Pods-PromisePlusRealm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PromisePlusRealm.release.xcconfig"; path = "Pods/Target Support Files/Pods-PromisePlusRealm/Pods-PromisePlusRealm.release.xcconfig"; sourceTree = "<group>"; };
+		1ADD0957C04EE2096E45F148 /* Pods-PromisePlusRealm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PromisePlusRealm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PromisePlusRealm/Pods-PromisePlusRealm.debug.xcconfig"; sourceTree = "<group>"; };
+		4ACB31AF5986AB16F01BAEC5 /* Pods_PromisePlusRealm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PromisePlusRealm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A909DD1F38A4C700571267 /* PromisePlusRealm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PromisePlusRealm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A909E01F38A4C700571267 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9A909E21F38A4C700571267 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E9A909E51F38A4C700571267 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E9A909E81F38A4C700571267 /* PromisePlusRealm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PromisePlusRealm.xcdatamodel; sourceTree = "<group>"; };
 		E9A909EA1F38A4C700571267 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9A909ED1F38A4C700571267 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9A909EF1F38A4C700571267 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9A909F51F38B57E00571267 /* PromisePlusRealm.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PromisePlusRealm.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,11 +52,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		814027951933AE03BD5E1DDB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1ADD0957C04EE2096E45F148 /* Pods-PromisePlusRealm.debug.xcconfig */,
+				05303AFC00BD489288680CC1 /* Pods-PromisePlusRealm.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8AE72DFD7648AE321BB627F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4ACB31AF5986AB16F01BAEC5 /* Pods_PromisePlusRealm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E9A909D41F38A4C700571267 = {
 			isa = PBXGroup;
 			children = (
 				E9A909DF1F38A4C700571267 /* PromisePlusRealm */,
 				E9A909DE1F38A4C700571267 /* Products */,
+				814027951933AE03BD5E1DDB /* Pods */,
+				8AE72DFD7648AE321BB627F1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,9 +90,9 @@
 		E9A909DF1F38A4C700571267 /* PromisePlusRealm */ = {
 			isa = PBXGroup;
 			children = (
+				E9A909F51F38B57E00571267 /* PromisePlusRealm.entitlements */,
 				E9A909E01F38A4C700571267 /* AppDelegate.swift */,
 				E9A909E21F38A4C700571267 /* ViewController.swift */,
-				E9A909E41F38A4C700571267 /* Main.storyboard */,
 				E9A909EA1F38A4C700571267 /* Assets.xcassets */,
 				E9A909EC1F38A4C700571267 /* LaunchScreen.storyboard */,
 				E9A909EF1F38A4C700571267 /* Info.plist */,
@@ -74,9 +108,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9A909F21F38A4C700571267 /* Build configuration list for PBXNativeTarget "PromisePlusRealm" */;
 			buildPhases = (
+				83DBE5BB8D91B7A33BB06F72 /* [CP] Check Pods Manifest.lock */,
 				E9A909D91F38A4C700571267 /* Sources */,
 				E9A909DA1F38A4C700571267 /* Frameworks */,
 				E9A909DB1F38A4C700571267 /* Resources */,
+				C1035D2551D1D99F696BB33D /* [CP] Embed Pods Frameworks */,
+				57753379F7D1311CE1C44F57 /* [CP] Copy Pods Resources */,
+				E9C3420F1F3A48BF009C59D8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -101,6 +139,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 4XSVH274M2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -129,11 +172,58 @@
 			files = (
 				E9A909EE1F38A4C700571267 /* LaunchScreen.storyboard in Resources */,
 				E9A909EB1F38A4C700571267 /* Assets.xcassets in Resources */,
-				E9A909E61F38A4C700571267 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		57753379F7D1311CE1C44F57 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PromisePlusRealm/Pods-PromisePlusRealm-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83DBE5BB8D91B7A33BB06F72 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C1035D2551D1D99F696BB33D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PromisePlusRealm/Pods-PromisePlusRealm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E9A909D91F38A4C700571267 /* Sources */ = {
@@ -149,14 +239,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E9A909E41F38A4C700571267 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E9A909E51F38A4C700571267 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E9A909EC1F38A4C700571267 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -265,27 +347,35 @@
 		};
 		E9A909F31F38A4C700571267 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1ADD0957C04EE2096E45F148 /* Pods-PromisePlusRealm.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PromisePlusRealm/PromisePlusRealm.entitlements;
 				DEVELOPMENT_TEAM = 4XSVH274M2;
 				INFOPLIST_FILE = PromisePlusRealm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.paveln.PromisePlusRealm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		E9A909F41F38A4C700571267 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05303AFC00BD489288680CC1 /* Pods-PromisePlusRealm.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PromisePlusRealm/PromisePlusRealm.entitlements;
 				DEVELOPMENT_TEAM = 4XSVH274M2;
 				INFOPLIST_FILE = PromisePlusRealm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.paveln.PromisePlusRealm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -308,6 +398,7 @@
 				E9A909F41F38A4C700571267 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

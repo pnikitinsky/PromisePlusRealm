@@ -1,0 +1,42 @@
+PODS:
+  - Bluebird (1.10.2)
+  - BrightFutures (5.1.0):
+    - Result (~> 3.0)
+  - PromiseKit (4.1.7):
+    - PromiseKit/Foundation (= 4.1.7)
+    - PromiseKit/QuartzCore (= 4.1.7)
+    - PromiseKit/UIKit (= 4.1.7)
+  - PromiseKit/CorePromise (4.1.7)
+  - PromiseKit/Foundation (4.1.7):
+    - PromiseKit/CorePromise
+  - PromiseKit/QuartzCore (4.1.7):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (4.1.7):
+    - PromiseKit/CorePromise
+  - Realm (2.4.3):
+    - Realm/Headers (= 2.4.3)
+  - Realm/Headers (2.4.3)
+  - RealmSwift (2.4.3):
+    - Realm (= 2.4.3)
+  - Result (3.1.0)
+  - SnapKit (3.2.0)
+
+DEPENDENCIES:
+  - Bluebird (~> 1.10)
+  - BrightFutures
+  - PromiseKit (~> 4.0)
+  - RealmSwift
+  - SnapKit (~> 3.2.0)
+
+SPEC CHECKSUMS:
+  Bluebird: 7f438878d4a438700b6fb7831a39c6ce9742bf98
+  BrightFutures: 62aafb1a63520eda91c9286bf4be33e58e043938
+  PromiseKit: 779f2e41faf62d854e7593026ddbcb0bb5c5002d
+  Realm: e08d60b0048ccccd3949c8c28a92c4db5712d7e9
+  RealmSwift: 30d49739ccb3385d201242736ca4dda56aec9dfc
+  Result: 4e3ed5995ed94d0cd6a09be9a431fce3f3624bbf
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+
+PODFILE CHECKSUM: 16099a16dbd010c64fee0e8e9a756f5bf694d4f3
+
+COCOAPODS: 1.1.1
